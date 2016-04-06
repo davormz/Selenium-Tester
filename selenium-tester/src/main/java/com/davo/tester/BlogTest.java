@@ -11,11 +11,18 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import com.davo.tester.common.WebDriverTypes;
 import com.davo.tester.driver.WebDriverFactory;
 
+/**
+ * 
+ * @author davo
+ *
+ */
 public class BlogTest {
 	
-	private static final String BLOG_URL = "http://davosoft.blogspot.com/";
+	private static final String BLOG_URL = "http://davosoft.blogspot.com/2016/03/web-automation-testing-with-selenium.html";
 	
-	static final String SCREEN_SHOT_CAPABILITY = "takesScreenShot";
+	private static final String SCREEN_SHOT_CAPABILITY = "takesScreenShot";
+	
+	private String readerName = "Davo";
 	
 	protected Map<String, Boolean> capabilitiesMap;
 	
@@ -34,9 +41,12 @@ public class BlogTest {
 	public void testBlogEntrance(){
 		driver.get(BLOG_URL);
 		
-		WebElement seleniumArticleLink = driver.findElement(By.linkText("Web automation testing with Selenium"));
-		seleniumArticleLink.click();
+		WebElement postCommentLink = driver.findElement(By.linkText("Post a Comment"));
+		postCommentLink.click();
 		
+		WebElement commentField = driver.findElement(By.id("comment-body"));
+		commentField.sendKeys("Hi I'm" + readerName + "  and this is a comment with Selenium.");
+		commentField.submit();
 		
 	}
 

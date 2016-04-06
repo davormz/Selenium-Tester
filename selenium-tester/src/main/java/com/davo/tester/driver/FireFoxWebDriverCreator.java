@@ -4,6 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+/**
+ * 
+ * @author davo
+ *
+ */
 public class FireFoxWebDriverCreator implements WebDriverCreator {
 	protected WebDriver driver;
 

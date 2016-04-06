@@ -5,6 +5,11 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import com.davo.tester.common.WebDriverTypes;
 
+/**
+ * 
+ * @author davo
+ *
+ */
 public class WebDriverFactory {
 	
 	public static WebDriver getWebDriver(WebDriverTypes driverType, DesiredCapabilities capabilities){

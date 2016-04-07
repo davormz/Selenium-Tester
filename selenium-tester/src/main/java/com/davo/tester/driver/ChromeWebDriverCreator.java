@@ -11,7 +11,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
  */
 public class ChromeWebDriverCreator implements WebDriverCreator {
 	static final String CHROME_DRIVER = "webdriver.chrome.driver";
-	static final String CHROME_DRIVER_LOCATION = "C:\\Users\\d.ramirez.ledesma\\Documents\\selenium\\chromedriver.exe";
+	static final String CHROME_DRIVER_LOCATION = "/home/davo/Documents/selenium/chromedriver";
 	
 	protected WebDriver driver;
 

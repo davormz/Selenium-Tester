@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 /**
- * 
+ * This interface defines how to create a web driver.
  * @author davo
  *
  */

@@ -12,11 +12,21 @@ import com.davo.tester.common.WebDriverTypes;
  */
 public class WebDriverFactory {
 	
+	/**
+	 * Based on the web driiver type and the capabilities this method return an instance of the WebDriver.
+	 * @param driverType
+	 * @param capabilities
+	 * @return WebDriver
+	 */
 	public static WebDriver getWebDriver(WebDriverTypes driverType, DesiredCapabilities capabilities){
 		WebDriver driver = null;
 		WebDriverCreator creator = null;
 		if(driverType.equals(WebDriverTypes.FIRE_FOX)){
 			creator = new FireFoxWebDriverCreator();
+			driver = creator.createWebDriver(capabilities);
+		}
+		if(driverType.equals(WebDriverTypes.CHROME)){
+			creator = new ChromeWebDriverCreator();
 			driver = creator.createWebDriver(capabilities);
 		}
 		

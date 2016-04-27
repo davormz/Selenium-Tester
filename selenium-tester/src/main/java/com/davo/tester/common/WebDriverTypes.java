@@ -1,7 +1,7 @@
 package com.davo.tester.common;
 
 /**
- * 
+ * Defines the types of existing WebDrives. 
  * @author davo
  *
  */

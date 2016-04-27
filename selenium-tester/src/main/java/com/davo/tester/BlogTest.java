@@ -12,7 +12,7 @@ import com.davo.tester.common.WebDriverTypes;
 import com.davo.tester.driver.WebDriverFactory;
 
 /**
- * 
+ * Simple Selenium test.
  * @author davo
  *
  */

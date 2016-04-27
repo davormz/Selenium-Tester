@@ -6,14 +6,14 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import com.davo.tester.common.WebDriverTypes;
 
 /**
- * 
+ * This class takes care of the specific WebDriver instantiation.
  * @author davo
  *
  */
 public class WebDriverFactory {
 	
 	/**
-	 * Based on the web driiver type and the capabilities this method return an instance of the WebDriver.
+	 * Based on the web driver type and the capabilities this method return an instance of the WebDriver.
 	 * @param driverType
 	 * @param capabilities
 	 * @return WebDriver

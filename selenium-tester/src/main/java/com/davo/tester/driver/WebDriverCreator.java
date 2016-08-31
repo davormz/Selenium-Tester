@@ -11,7 +11,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 public interface WebDriverCreator {
 	
 	/**
-	 * 
+	 * Creates the instance of a WebDriver.
 	 * @param capabilities
 	 * @return WebDriver - The specific WebDriver; it could be FireFox, Chrome or IE.
 	 */

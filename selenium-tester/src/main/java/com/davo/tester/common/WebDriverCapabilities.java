@@ -1,5 +1,10 @@
 package com.davo.tester.common;
 
+/**
+ * Represents the main WebDriver's capabilities. 
+ * @author d.ramirez.ledesma
+ *
+ */
 public enum WebDriverCapabilities {
 	BROWSER_NAME("browserName"),
 	BROWSER_VERSION("version"),

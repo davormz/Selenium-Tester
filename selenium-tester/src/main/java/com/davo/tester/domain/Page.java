@@ -26,6 +26,14 @@ public abstract  class Page {
 	public void close(){
 		webDriver.quit();
 	}
+	
+	/**
+	 * 
+	 * @return String - the assigned identifier for this window.
+	 */
+	public String getWindow(){
+		return webDriver.getWindowHandle();
+	}
 
 	public WebDriver getWebDriver() {
 		return webDriver;

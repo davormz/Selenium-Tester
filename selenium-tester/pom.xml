@@ -3,6 +3,20 @@
   <groupId>com.davo.tester</groupId>
   <artifactId>selenium-tester</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <build>
+  	<resources>
+  		<resource>
+            <directory>src/main/resources</directory>
+            <filtering>true</filtering>
+            <includes>
+                <include>**/*.properties</include>
+            </includes>
+        </resource>
+  	
+  	</resources>
+  </build>
+  
   <dependencies>
       <dependency>
           <groupId>org.seleniumhq.selenium</groupId>
@@ -10,12 +24,13 @@
           <version>2.52.0</version>
       </dependency>
 	<dependency>
-		<groupId>junit</groupId>
-		<artifactId>junit</artifactId>
-		<version>4.11</version>
-		<scope>test</scope>
+	  <groupId>junit</groupId>
+	  <artifactId>junit</artifactId>
+	  <version>4.12</version>
+	  <scope>test</scope>
 	</dependency>
   </dependencies>
+ 
   <name>selenium-tester</name>
   <scm>
   	<url>https://github.com/davormz/Selenium-Tester.git</url>

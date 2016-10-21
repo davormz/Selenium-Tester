@@ -1,5 +1,7 @@
 package com.davo.tester.driver;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -26,7 +28,12 @@ public class WebDriverFactory {
 			driver = creator.createWebDriver(capabilities);
 		}
 		if(driverType.equals(WebDriverTypes.CHROME)){
-			creator = new ChromeWebDriverCreator();
+			try {
+				creator = new ChromeWebDriverCreator();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			driver = creator.createWebDriver(capabilities);
 		}
 		

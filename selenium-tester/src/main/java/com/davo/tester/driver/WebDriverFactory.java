@@ -30,13 +30,12 @@ public class WebDriverFactory {
 		if(driverType.equals(WebDriverTypes.CHROME)){
 			try {
 				creator = new ChromeWebDriverCreator();
+				driver = creator.createWebDriver(capabilities);
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			driver = creator.createWebDriver(capabilities);
 		}
-		
 		return driver;
 	}
 	
